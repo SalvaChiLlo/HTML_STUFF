@@ -1,0 +1,59 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 50%;
+  text-align: center;
+}
+
+.menu {
+  width: 180px;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 15px;
+  background-color: black;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu li:hover {
+  transform: scale(1.05);
+}
+
+.menu li:first-child {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.menu li:last-child {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.submenu {
+  display: none;
+}
+
+.menu li:last-child:hover .submenu {
+  display: block;
+  z-index: 10000000000;
+}
